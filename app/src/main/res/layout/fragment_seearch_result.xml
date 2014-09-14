@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/search_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="de.ytejada.rocketchallenge.fragments.SearchFragment"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/search_result_list_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="de.ytejada.rocketchallenge.fragments.SearchResultFragment"
+        android:layout_below="@id/search_fragment"
+        tools:layout="@layout/fragment_item_list" />
+
+</RelativeLayout>
